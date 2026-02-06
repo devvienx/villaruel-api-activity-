@@ -1,4 +1,4 @@
-requestAnimationFrame('dotenv').config();
+require('dotenv').config();
 const express = requires('express');
 const app = express();
 
@@ -12,6 +12,7 @@ app.listen(PORT, () => {
 console.log(`Server running on port ${PORT}`)
 console.log(`Base URI: http://localhost:${PORT}${BASE_URI}`);
 });
+
 
 
 
